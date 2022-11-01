@@ -1,0 +1,67 @@
+<html>
+	<title>
+		Docker
+	</title>
+	<head>
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	</head>
+	<body>
+		<div class="docker">
+			<center>	
+				<img src="img/docker.png" width="500px" height="100px">
+			</center>
+		</div>
+		<div>
+			 <nav>
+                        <ul>
+                                <li> <a href="index.html"> Home </a></li>
+                                <li> <a href="about.html"> About Docker </a></li>
+                                <li> <a href="command.html">Commands </a> </li>
+
+
+                </nav>
+		</div>
+		<div> 
+			<h3> What is Docker?</h3>
+
+			<p> Simply put, a tool which is designed to make it easier to create, deploy, and run applications by using containers is what we call Docker. It is an open platform for developing, shipping, as well as running applications.
+				As its best feature, it enables us to separate our applications from our infrastructure so delivering software quickly will become easy. Moreover, usage of Docker helps to manage the infrastructure easily and in the same ways, one manages their applications.</p>
+		</div>
+		<div>
+			<center>
+			<img src="img/docker-architecture.png" width="500px" height="300px" alt="image">
+			</center>
+		</div>
+		<div>
+			<h3>Docker Architecture</h3>
+			<p>While it comes to Docker architecture, it uses a client-server architecture. And, its architecture consists of 3 major parts, such as:</p>
+			<ul>
+				<li>Docker Host</li>
+				<li>Docker Client</li>
+				<li>Registry</li>
+			</ul>
+			<p>
+At very first, Docker client talks to the Docker daemon, which performs the heavy lifting of the building, running, as well as distributing of our Docker containers. Basically, both the Docker client and daemon can run on the same system or we can connect a Docker client to a remote Docker daemon.
+In addition, by using a REST API, the Docker client and daemon communicates, over UNIX sockets or a network interface. Now, let’s learn about all three components of Docker Architecture in detail:</p>
+		</div>
+		<div>
+			<ol><li>i. Docker Host</li>
+						<p>
+Basically, a Docker Host runs the Docker Daemon. As its job role, the daemon listens for Docker API requests such as ‘docker run’, ‘docker builds’, anything and also manages Docker objects like images, containers, networks, etc.
+Moreover, one daemon can easily communicate with other daemons in order to manage Docker services.</p>
+	<li>Docker Client</li>
+	<p>Here, the Client is nothing but the primary way by which many Docker users interact with Docker.
+	While we use various commands like (docker build, docker run, etc) the Docker client sends these commands to the Docker Daemon, which carries them out. One of the best features of Docker client is, it can easily communicate with more than one daemon.<p>
+	<li>	Docker Registries</li>
+	<p>
+A stateless, highly scalable server-side application, which stores and lets us distribute Docker images is what we call the Registry. There is a flexibility that either we can create our own image or we can use public registries such as Docker Hub and Docker Cloud.
+By default, Docker is configured to look for images on one of its public registries “Docker Hub”. One of the advantages it offers is we can create our own registry as well.
+Hence, while we run the docker pull or docker run command, it is possible to pull the required images from our configured registry. Basically, our image is pushed to our configured registry, while we use the docker push command.
+<p>
+			</ol>
+		</div>
+
+	</body>
+</html>
+
